@@ -1,0 +1,66 @@
+<div class="container home-page">
+  <div class="title">Chứng khoán
+    <a href="./result-lenhdat" target="_blank" style="font-size: small;">(Lệnh
+      đặt</a>
+    ,
+    <a href="./result-lenhkhop" target="_blank" style="font-size: small;">Lệnh
+      khớp)</a>
+  </div>
+  <div class="content">
+    <form id="myForm" method="POST" action="/">
+      <div class="form-details">
+        <div class="input-box">
+          <span class="details">Mã cổ phiếu</span>
+          <input
+            name="macp"
+            type="text"
+            pattern="[A-Za-z0-9]+"
+            placeholder="Nhập mã cổ phiếu"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <span class="details">Loại giao dịch</span>
+          <select name="loaigd" id="kinds">
+            <option value="M" selected>Mua</option>
+            <option value="B">Bán</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <span class="details">Số lượng</span>
+          <input
+            name="soluong"
+            type="number"
+            placeholder="Nhập số lượng"
+            required
+            min="1"
+          />
+        </div>
+        <div class="input-box">
+          <span class="details">Loại lệnh</span>
+          <input type="text" value="LO" disabled />
+        </div>
+        <div class="input-box">
+          <span class="details">Giá đặt</span>
+          <input
+            name="giadat"
+            type="number"
+            placeholder="Nhập giá đặt"
+            required
+            min="1"
+          />
+        </div>
+      </div>
+      <div class="col col-half button">
+        <input type="submit" value="Đặt lệnh" id="btn-datlenh" />
+      </div>
+      <div class="col col-third button">
+        <input type="button" value="Làm lại" id="btn-lamlai" />
+      </div>
+    </form>
+    <p
+      id="tag-error"
+      style="color: {{mess.color}}; display: inline;"
+    >{{mess.err}}</p>
+  </div>
+</div>

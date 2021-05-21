@@ -1,0 +1,26 @@
+<div class="container result-page">
+  <h2 style="color: blueviolet">Table LENHKHOP</h2>
+  <table class="table table-striped mt-4">
+    <thead>
+      <tr>
+        <th scope="col">IDKHOP</th>
+        <th scope="col">NGAYKHOP</th>
+        <th scope="col">SOLUONGKHOP</th>
+        <th scope="col">GIAKHOP</th>
+        <th scope="col">IDLENHDAT</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each lenh}}
+        <tr>
+          <th scope="row">{{this.IDKHOP}}</th>
+          <td>{{this.NGAYKHOP}}</td>
+          <td>{{this.SOLUONGKHOP}}</td>
+          <td>{{this.GIAKHOP}}</td>
+          <td>{{this.IDLENHDAT}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+</div>
