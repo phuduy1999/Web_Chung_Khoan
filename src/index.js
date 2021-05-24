@@ -27,7 +27,7 @@ app.use(express.json());
 //Template engine
 app.engine(
     'hbs',
-    handlebars({
+    handlebars({ 
         extname: '.hbs',
     }),
 );
