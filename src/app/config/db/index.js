@@ -4,9 +4,9 @@ const sqlConfig = {
     user: 'sa',
     password: '123',
     database: 'CHUNGKHOAN',
-    driver:'msnodesqlv8',
+    driver: 'msnodesqlv8',
 }
 
-const sqlConnect=sql.connect(sqlConfig)
+const sqlConnect = sql.connect(sqlConfig)
 
-module.exports={sqlConnect,sql};
+module.exports = { sqlConnect, sql };
